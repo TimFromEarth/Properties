@@ -1,0 +1,53 @@
+/* Цвет текста для заголовков: */
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: green;
+}
+
+h3 {
+  color: orange;
+}
+/* Размер шрифта для абзацев, следующего сразу за заголовком h2 и для всех остальных абзацев: */
+h2 + p {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+}
+/* Выровнивание текста для заголовков: */
+h1 {
+  text-align: center;
+}
+/* Жирное начертание для абзацев, следующих сразу за заголовком h2: */
+h2 + p {
+  font-weight: bold;
+}
+
+div {
+  /* Фон для div-элементов */
+  background-color: lightskyblue;
+  /* Внутренние отступы */
+  padding: 10px;
+  /* Внешние отступы */
+  margin: 20px;
+  /* Рамка */
+  border: 2px solid black;
+  /* Ширина и высота */
+  width: 200px;
+  height: 150px;
+  /* Управление переполнением */
+  overflow: hidden;
+}
+div + div {
+  /* Фоновое изображение для второго div-элемента */
+  background-image: url(istockphoto-1459373176-612x612.jpg);
+  /* Внутренние отступы */
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+  overflow: scroll;
+}
